@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1500"
+   height="1100.52"
+   viewBox="0 0 1500 1100.5201"
+   sodipodi:docname="final_design.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="0.7189184"
+     inkscape:cx="768.51559"
+     inkscape:cy="561.2598"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="1500"
+       height="1100.5201"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <path
+       id="path1"
+       d="m 234,324.289 v 54.008 h 18 v 36 H 234 V 486 h 18 v 36 h -18 v 53.027 h 36.258 v -18 h 36 v 18 H 360 v -18 h 36 v 18 h 55.66 v -18 h 36 v 18 H 522 V 522 h -18 v -36 h 18 v -71.703 h -18 v -36 h 18 v -54.008 h -34.34 v 18 h -36 v -18 H 396 v 18 h -36 v -18 h -53.742 v 18 h -36 v -18 z"
+       style="fill:#ffff00;stroke:#1a1a1a;stroke-width:0.749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path2"
+       d="m 234,144.488 v 54 h 20.211 v 36 H 234 v 54 h 36.258 v 18 h 36 v -18 H 360 v 18 h 36 v -18 h 55.66 v 18 h 36 v -18 H 522 v -54 h -18 v -36 h 18 v -54 z"
+       style="fill:#ffff00;stroke:#1a1a1a;stroke-width:0.777083;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path3"
+       d="m 234,756.391 v -54 h 20.211 v -36 H 234 v -54 h 36.258 v -18 h 36 v 18 H 360 v -18 h 36 v 18 h 55.66 v -18 h 36 v 18 H 522 v 54 h -18 v 36 h 18 v 54 z"
+       style="fill:#ffff00;stroke:#1a1a1a;stroke-width:0.777083;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path4"
+       d="m 54,558.766 h 54 v 18 h 36 v -18 h 54 v -36.297 h 18 v -36 h -18 v -71.703 h 18 v -36 h -18 v -36 h -54 v -20.215 h -36 v 20.215 H 54 Z"
+       style="fill:#ffff00;stroke:#1a1a1a;stroke-width:1.02792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path5"
+       d="m 702,558.766 h -54 v 18 h -36 v -18 h -54 v -36.297 h -18 v -36 h 18 v -71.703 h -18 v -36 h 18 v -36 h 54 v -20.215 h 36 v 20.215 h 54 z"
+       style="fill:#ffff00;stroke:#1a1a1a;stroke-width:1.02792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+  </g>
+</svg>
