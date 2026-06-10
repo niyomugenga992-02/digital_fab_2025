@@ -1,173 +1,328 @@
-# 1. Activity of Day 1
+# 1. Activity of Day 1: Introduction to Modeling and Fabrication Design
 
-# Foundations of Modeling & Fabrication
+## Summary
 
-## Student Introduction
-**This is Miss Niyomugenga Grace**, a Master of Science student in **IoT Embedded Computing Systems (ECS)** at University of Rwanda, ACEIoT. This portfolio documents my journey in Modeling & Fabrication.
-## My Course Project: CO3 Nameplate
-Throughout this course, I will design and fabricate a custom **CO3 nameplate** - an oval-shaped sign with carved lettering. This project will integrate multiple fabrication techniques learned across all 9 days, from initial concept to final finishing.
-## Course Understanding
-This documentation explores the core philosophy that **design and making are inseparable**.
+Day 1 introduces the foundational concepts bridging design intent and physical reality. I explored the design-to-fabrication continuum and contemporary digital fabrication paradigms that shape modern making practices, then established the CO3 nameplate project scope.
 
-In this module, we move beyond simple manufacturing to understand that design today is **computational, material-driven, and production-aware**.
+## Learning Objectives
 
-### Project Brief: CO3 Nameplate
-**Objective:** Design and fabricate a professional nameplate featuring "CO3" text
+- Understand the relationship between digital modeling and physical fabrication
+- Learn the design-to-fabrication continuum: Design → Model → Prototype → Fabricate → Evaluate
+- Identify key digital fabrication paradigms and their applications
+- Recognize how fabrication methods shape design decisions from conception
+- Set up professional documentation workflow using MkDocs
+
+## 1. Introduction to Modeling and Fabrication
+
+### Why Modeling & Fabrication Matter
+
+Contemporary design practice has fundamentally shifted. Design today is computational, material-driven, and production-aware. Fabrication is no longer merely an end step—it actively shapes design decisions from the earliest conceptual stages.
+
+**Key Applications:**
+- **Architecture:** Parametric facades, robotically fabricated structures
+- **Product Design:** Rapid prototyping, mass customization, user-centered iteration
+- **Engineering:** Simulation-driven design, additive manufacturing
+- **Research:** Physical computing, material experimentation, speculative design
+
+### The Design-to-Fabrication Continuum
+
+Design follows an iterative cycle, not a linear path:
+
+```
+Design → Model → Prototype → Fabricate → Evaluate → [Repeat]
+```
+
+**Critical Insight:** This process is iterative, not linear. Feedback occurs at every stage, and failure serves as a powerful learning tool.
+
+| Phase | Description |
+|-------|-------------|
+| **Design** | Conceptualize and define intent, goals, and constraints |
+| **Model** | Create digital representations encoding design logic |
+| **Prototype** | Build physical tests to validate assumptions |
+| **Fabricate** | Produce final artifacts using appropriate methods |
+| **Evaluate** | Assess outcomes and gather learnings for next cycle |
+
+### Digital Fabrication Paradigms
+
+Contemporary fabrication methods fall into four primary categories:
+
+#### Subtractive Fabrication
+**Process:** Removing material from solid stock through cutting, milling, or drilling
+
+**Technologies:** CNC milling, laser cutting, waterjet cutting, lathe turning
+
+**Advantages:**
+- High precision and accuracy
+- Excellent surface finish
+- Wide material compatibility
+
+**Constraints:**
+- Material waste
+- Limited to 2.5D without multi-axis machines
+- Tool access limitations
+
+**Materials:** Wood, metals, plastics, foam, composites
+
+#### Additive Fabrication
+**Process:** Building objects layer-by-layer through material deposition
+
+**Technologies:** FDM/FFF, SLA/DLP, SLS, binder jetting, material jetting
+
+**Advantages:**
+- Complex geometries without additional cost
+- Minimal material waste
+- Design freedom and internal structures possible
+
+**Constraints:**
+- Visible layer lines
+- Support structures required
+- Material limitations
+- Post-processing often needed
+
+**Materials:** PLA, ABS, PETG, nylon, resins, metals (specialized), ceramics
+
+#### Formative Fabrication
+**Process:** Shaping material through force, heat, or pressure using molds
+
+**Technologies:** Casting, vacuum forming, injection molding, bending, stamping, thermoforming
+
+**Advantages:**
+- Material efficiency
+- High-volume production capability
+- Organic, flowing forms
+
+**Constraints:**
+- Requires tooling/molds (upfront cost)
+- Draft angles required
+- Undercut limitations
+
+**Materials:** Plastics, metals, concrete, composites, textiles, elastomers
+
+#### Hybrid Fabrication
+**Process:** Combining multiple fabrication paradigms sequentially or simultaneously
+
+**Examples:**
+- 3D printed molds for casting
+- Additive + subtractive machining
+- Laser-cut assembled components with 3D printed connectors
+
+**Advantages:**
+- Optimizes strengths of each method
+- Increased geometric complexity
+- Material diversity in single object
+
+**Constraints:**
+- Workflow complexity
+- Multiple machines/skills required
+- Alignment challenges
+
+**Key Insight:** Fabrication method is a design choice, not an afterthought. The selected paradigm influences geometry, materiality, cost, sustainability, and aesthetic expression. Expert designers think through fabrication from the earliest conceptual stages.
+
+## 2. Activity: Building Documentation Website with MkDocs
+
+### Overview
+
+I set up a documentation website using MkDocs with Material theme to record and showcase all course activities, design processes, and fabrication experiments. This documentation serves as both a learning tool and a professional portfolio.
+
+**Documentation as Design Practice:** Documentation is not an afterthought—it is part of the design process itself. Through documenting work, you develop clarity of thought, communicate complex ideas, and contribute to the collective knowledge of the design community.
+
+### Step 1: Install Prerequisites
+
+```bash
+# Install Python 3.8 or later
+# Download from https://www.python.org/
+
+# Install MkDocs and Material theme
+pip install mkdocs-material
+```
+
 **Requirements:**
-- Oval outer shape for aesthetic appeal
-- Deeply carved/cut lettering for visual impact
-- Smooth, professional finish suitable for display
-- Demonstrate mastery of digital design and fabrication techniques
+- Python version 3.8 or later
+- pip (Python package manager)
 
-### Key Concepts
-!!! quote "The Design-to-Fabrication Continuum"
-    The process is not a straight line. It is an **iterative cycle**:
-    
-    1.  **Design:** Establishing intent.
-    2.  **Model:** Representing form, logic, and behavior.
-    3.  **Prototype:** Testing assumptions.
-    4.  **Fabricate:** Transforming models into physical artifacts.
-    5.  **Evaluate:** Using feedback to improve the design.
+### Step 2: Create a New MkDocs Project
 
-# Digital Modeling
+```bash
+# Create new documentation project
+mkdocs new fabrication-docs
 
-## Initial Concept Sketching
-Before jumping into CAD, I started with hand sketches to explore the design:
+# Move into project directory
+cd fabrication-docs
+```
 
-**Sketch 1: Layout Options**
-- Explored different letter arrangements
-- Tested oval vs. rectangular outer shapes
-- Considered proportions and visual balance
+This creates the following structure:
+```
+fabrication-docs/
+├── mkdocs.yml
+├── docs/
+│   └── index.md
+└── README.md
+```
 
-**Sketch 2: Dimensional Planning**
-- Overall dimensions: ~150mm x 90mm oval
-- Letter height: ~40mm for "C", "O", "3"
-- Depth of cut: 3-5mm for dramatic shadows
-- Border thickness: 10-15mm around letters
+### Step 3: Enable the Material Theme
 
-**Design Decision:** Selected oval shape with vertically-stacked "CO3" for optimal visual impact and material efficiency.
+Edit `mkdocs.yml` to enable Material theme and configure basic settings:
 
-![Initial Draft - CO3 Concept Sketch](../images/day_1/Initial Draft.png)
-*Initial Draft: My first concept sketch transitioning from analog to digital modeling - exploring layout options and proportions for the CO3 nameplate*
+```yaml
+site_name: CO3 Nameplate Documentation
+site_description: Foundations of Modeling & Fabrication
+site_author: Your Name
 
-## Modeling Workflow
-Modeling is more than just creating a shape; it is the **representation of form, logic, and behavior**. My workflow incorporates two distinct approaches:
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: light-blue
+```
 
-1.  **Geometric Modeling:** Defining static shapes and physical dimensions.
-2.  **Parametric & Rule-Based Modeling:** Using parameters to enable variation without needing to redesign the entire object.
+### Step 4: Write Documentation Content
 
-## Design Decisions
-Every design choice was made with the understanding that **fabrication method is a design choice**.
+All documentation pages are written in Markdown format. Place files in the `docs/` directory:
 
-### Parametric Thinking
-By utilizing parametric thinking, I treat my models as **research tools**. This allows me to:
-* Test assumptions about fit and function.
-* Quickly adjust variables when physical constraints change.
+```
+docs/
+├── index.md
+├── Daily-Activity/
+│   ├── day_1.md
+│   ├── day_2.md
+│   └── ...
+├── images/
+│   └── day_1/
+│       └── ...
+└── stylesheets/
+    └── extra.css
+```
 
-![CO3 Nameplate Design Reference](../images/day_1/Initial Draft.png)
-*The CO3 nameplate design we will create throughout this course*
+### Step 5: Configure Navigation
 
-# Fabrication Logic
+Define site navigation in `mkdocs.yml` to organize pages hierarchically:
 
-## Fabrication Paradigms for the CO3 Nameplate
-To transform my digital model into physical reality, I considered multiple fabrication approaches:
+```yaml
+nav:
+  - Home: index.md
+  - Daily Activities:
+    - Day 1: Daily-Activity/day_1.md
+    - Day 2: Daily-Activity/day_2.md
+    - Day 3: Daily-Activity/day_3.md
+```
 
-**Option 1: Laser Cutting (Subtractive)**
-- Pros: Fast, precise, clean edges
-- Cons: Limited to 2D cutting, no depth variation
-- Best for: Flat nameplate with through-cuts
+### Step 6: Preview the Website Locally
 
-**Option 2: CNC Router Milling (Subtractive)**
-- Pros: Can create depth, 2.5D carving, professional finish
-- Cons: Longer fabrication time, requires tool changes
-- Best for: Carved lettering with depth
+Run the development server to preview changes in real time:
 
-**Option 3: 3D Printing (Additive)**
-- Pros: Rapid prototyping, complex geometries
-- Cons: Visible layer lines, requires extensive finishing
-- Best for: Initial prototypes and design validation
+```bash
+mkdocs serve
+```
 
-**Decision:** I will use **CNC router milling** for the final piece due to its ability to create depth and professional surface finish. However, I'll start with a 3D printed prototype to validate the design.
+Open your browser to `http://127.0.0.1:8000` to view your site. Changes auto-reload as you edit files.
 
-## Material & Tolerance Considerations
-Real-world fabrication introduces physical constraints that digital models often ignore.
+### Step 7: Enable Material Features (Optional)
 
-!!! warning "Designing for Imperfection"
-    As noted in our coursework, real-world fabrication inevitably introduces **error and deformation**. 
-    
-    * **Tolerance:** I designed my parts with specific **tolerance limits** to ensure proper fit despite machine inaccuracy.
-    * **Material Behavior:** The choice of material actively influenced the design outcome, requiring adjustments for shrinkage and flexibility.
+Add advanced Material theme features to `mkdocs.yml`:
 
-# Prototyping & Iteration
+```yaml
+theme:
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+```
 
-## Rapid Prototyping Strategy for CO3 Nameplate
-Prototyping validates design decisions before committing to final fabrication.
+### Step 8: Add Recommended Markdown Extensions
 
-### Phase 1: Paper Mockup (Day 1)
-**Purpose:** Validate size and proportions
-**Method:** Print 1:1 scale outline on paper
-**Result:** Confirmed 150mm x 90mm oval feels appropriately sized
+Enable markdown extensions for richer documentation:
 
-### Phase 2: 3D Printed Prototype (Day 6)
-**Purpose:** Test letter depth, overall aesthetics, and design refinement
-**Material:** PLA plastic
-**Timeline:** 2-3 hours print time
-**Validation:** Check letter legibility, depth effectiveness, overall visual balance
+```yaml
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - toc:
+      permalink: true
+```
 
-### Phase 3: Test Cut on Scrap Material (Day 7)
-**Purpose:** Validate CNC toolpaths and cutting parameters
-**Material:** Scrap plywood
-**Result:** Refine feeds, speeds, and depth settings
+### Step 9: Build the Static Website
 
-### Phase 4: Final Fabrication (Day 7-8)
-**Material:** Premium wood or aluminum
-**Process:** CNC router milling with optimized parameters
-**Finishing:** Sanding, staining/painting, protective coating
+Generate static HTML files for deployment:
 
-# Reflection – Lessons Learned & Critical Analysis
+```bash
+mkdocs build
+```
 
-## Day 1 Achievements
-Today marked the beginning of the CO3 nameplate project. I established:
-- Clear project objectives and requirements
-- Initial design concepts through sketching
-- Fabrication strategy (CNC milling for final, 3D printing for prototype)
-- Prototyping timeline across the course
+This creates a `site/` directory containing all HTML, CSS, and JavaScript files ready for hosting.
 
-## The Iterative Process
-The most important lesson from this module is that the process is **iterative, not linear**. For the CO3 nameplate:
-1. I started with rough sketches to explore layout options
-2. Defined critical dimensions and proportions
-3. Planned a multi-phase prototyping approach
-4. Selected appropriate fabrication methods for each phase
+### Step 10: Deploy to GitHub Pages
 
-### Design Thinking for the CO3 Project
-**Question:** Why an oval shape?
-**Answer:** The oval provides visual softness while maximizing usable surface area and creating an elegant frame for the letters.
+Deploy your documentation website to GitHub Pages:
 
-**Question:** Why vertically stacked letters?
-**Answer:** Vertical stacking creates a strong visual axis, ensures letter legibility, and works well within the oval proportions.
+```bash
+mkdocs gh-deploy
+```
 
-## Next Steps for Day 2
-Tomorrow I will:
-1. Create the precise CAD model in FreeCAD
-2. Define exact dimensions and tolerances
-3. Export files in multiple formats (STL for 3D printing, DXF for CNC)
-4. Validate the digital model against design requirements
+**Prerequisites for Deployment:**
+- Project must be in a Git repository
+- Must have GitHub account and repository
+- Requires write access to repository settings
 
-## Final Learning Outcomes
-Through Day 1, I have learned to:
-1.  **Start with clear project requirements** before designing
-2.  **Sketch before modeling** to explore options quickly
-3.  **Plan the entire fabrication workflow** from the beginning
-4.  **Select appropriate processes** for prototyping vs. final production
+**Alternative Deployment Options:**
+- Netlify
+- Vercel
+- Local server
+- Traditional web hosting
 
-!!! quote "Key Insight"
-    \"The best designs emerge when fabrication logic informs the design process from day one, not as an afterthought.\"
+## Key Takeaways
 
----
+### Conceptual Understanding
 
-## Visual Reference Gallery
+- **Design and making are inseparable.** Fabrication methods shape design from conception.
+- **Fabrication method is a design choice.** Each paradigm influences form, material, cost, and aesthetics.
+- **Iteration drives learning.** The design-to-fabrication cycle repeats to refine outcomes.
+- **Documentation is design practice.** Recording work develops clarity and builds professional portfolios.
 
-![FabLab Digital Fabrication](../images/day_1/fabslogo.svg)
-*FabLab - Digital Fabrication Foundation*
+### Practical Skills
+
+By completing this activity, I have:
+
+1. Established the CO3 nameplate project scope (150mm × 90mm oval, 10mm base, 4mm carved letters)
+2. Understood how different fabrication methods apply to this project
+3. Set up a local MkDocs development environment with Material theme
+4. Configured documentation structure and navigation
+5. Previewed website changes in real-time
+6. Prepared infrastructure for documenting all subsequent fabrication activities
+
+### Resources
+
+**Documentation Tools:**
+- [MkDocs Official Documentation](https://www.mkdocs.org/)
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- [Markdown Guide](https://www.markdownguide.org/)
+
+**Git & GitHub:**
+- [GitHub Pages Documentation](https://pages.github.com/)
+- [Git Basics](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+
+**Version Control Best Practices:**
+- Create meaningful commit messages
+- Document all design iterations
+- Back up frequently
+- Share progress with team members
+
+## Additional Links
+
+- [2. Activity of Day 2](day_2.md)
+- [3. Activity of Day 3](day_3.md)
+- [4. Activity of Day 4](day_4.md)
+- [5. Activity of Day 5](day_5.md)
+- [6. Activity of Day 6](day_6.md)
+- [7. Activity of Day 7](day_7.md)
+- [8. Activity of Day 8](day_8.md)
+- [9. Activity of Day 9](day_9.md)
+- [Next: 2. Activity of Day 2](day_2.md)
+
 

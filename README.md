@@ -1,9 +1,9 @@
 # UR-ACEIoT Student Documentation: CO3 Nameplate Project
 ## Niyomugenga Grace - Modeling & Fabrication Course
 
-**Live Site:** [https://niyomugenga92.github.io/Niyomugenga-URACEIoT/](https://niyomugenga92.github.io/Niyomugenga-URACEIoT/)
+**Live Site:** https://niyomugenga992-02.github.io/digital_fab_2025/
 
-**Repository:** [https://github.com/niyomugenga92/Niyomugenga-URACEIoT](https://github.com/niyomugenga92/Niyomugenga-URACEIoT)
+**Repository:** https://github.com/niyomugenga992-02/digital_fab_2025
 
 **Author:** Niyomugenga Grace  
 **Program:** MSc in IoT Embedded Computing Systems (ECS)  
@@ -90,8 +90,8 @@ This repository documents **Niyomugenga Grace's** comprehensive digital fabricat
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/niyomugenga92/Niyomugenga-URACEIoT.git
-   cd Niyomugenga-URACEIoT
+   git clone https://github.com/niyomugenga992-02/digital_fab_2025.git
+   cd digital_fab_2025
    ```
 
 2. **Create and activate virtual environment**
@@ -133,7 +133,7 @@ git push origin main
 
 # GitHub Actions automatically builds and deploys
 # Site is live within 2-3 minutes at:
-# https://niyomugenga92.github.io/Niyomugenga-URACEIoT/
+# https://niyomugenga992-02.github.io/digital_fab_2025/
 ```
 
 ---
@@ -200,16 +200,16 @@ Niyomugenga-URACEIoT/
 
 #### Change Theme Colors
 Edit `mkdocs.yml`:
-```yaml
-theme:
-  palette:
-    primary: blue        # Change primary color
-    accent: light blue   # Change accent color
-```
+```bash
+# Make your edits
+git add .
+git commit -m "Update documentation"
+git push origin main
 
-#### Add Custom Styling
-Edit `docs/stylesheets/extra.css`:
-- Header/footer colors
+# GitHub Actions automatically builds and deploys
+# Site is live within 2-3 minutes at:
+# https://niyomugenga992-02.github.io/digital_fab_2025/
+```
 - Typography and spacing
 - Responsive breakpoints
 - Animation effects
@@ -357,4 +357,4 @@ This project documentation is created for educational purposes as part of the **
 **Status:** COMPLETE AND DEPLOYED
 
 🎉 **The CO3 Nameplate Project is LIVE!**  
-Visit [https://niyomugenga92.github.io/CO3/](https://niyomugenga92.github.io/CO3/) to explore the full documentation.
+Visit https://niyomugenga992-02.github.io/digital_fab_2025/ to explore the full documentation.

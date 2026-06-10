@@ -1,12 +1,11 @@
-# Replace the text below to customize your site
-site_name: CO3
-site_description: CO3 project documentation
+site_name: Digital Fabrication
+site_description: Digital fabrication activities
 site_author: Niyomugenga Grace
 copyright: Copyright 2026 Niyomugenga Grace - Creative Commons Attribution Non-commercial
 
-site_url: https://niyomugenga92.github.io/CO3/
-repo_url: https://github.com/niyomugenga92/CO3
-repo_name: CO3
+site_url: https://niyomugenga992-02.github.io/digital_fab_2025
+repo_url: https://github.com/niyomugenga992-02/digital_fab_2025
+repo_name: digital_fab_2025
 
 extra:
   social:
